@@ -1,0 +1,119 @@
+<ion-side-menus>
+    <!--主内容区-->
+    <ion-side-menu-content>
+        <!--header-->
+        <div class="bar bar-header bar-white item-input-inset">
+            <button class="button button-clear button-assertive  icon ion-navicon" menu-toggle="left"
+                    ></button>
+            <label class="item-input-wrapper">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="search" placeholder="请输入搜索关键字"/>
+            </label>
+            <button class="button button-clear button-assertive ion-search"></button>
+        </div>
+        <!--content轮播图区域-->
+        <ion-content id="ionContent">
+            <ion-slide-box does-continue="true" auto-play="true"
+                           slide-interval="2500" id="slideBox">
+                <ion-slide>
+                    <div class="box"><img src="images/slide-1.jpg" /></div>
+                </ion-slide>
+                <ion-slide>
+                    <div class="box"><img src="images/slide-2.jpg"/></div>
+                </ion-slide>
+                <ion-slide>
+                    <div class="box"><img src="images/slide-3.jpg"/></div>
+                </ion-slide>
+                <ion-slide>
+                    <div class="box"><img src="images/slide-4.jpg"/></div>
+                </ion-slide>
+                <ion-slide>
+                    <div class="box"><img src="images/slide-5.jpg"/></div>
+                </ion-slide>
+            </ion-slide-box>
+            <div  id="homeRow" class="row">
+                <div class="col col-25">
+                    <img src="images/meishi1.jpg" ui-sref="tabs.video"/><p>美食视频</p>
+                </div>
+                <div class="col col-25">
+                    <img src="images/meishi2.jpg" ui-sref="tabs.video"/><p>美食菜单</p>
+                </div>
+                <div class="col col-25">
+                    <img src="images/meishi3.jpg" ui-sref="tabs.video"/><p>美食活动</p>
+                </div>
+                <div class="col col-25">
+                    <img src="images/meishi4.jpg" ui-sref="tabs.video"/><p>最新食谱</p>
+                </div>
+            </div>
+            <!--周围都在看-->
+            <div class="row"><div class="col">
+                <p id="focus">大家都在关注:<i class="icon ion-social-instagram"></i></p>
+            </div></div>
+            <div class="row " id="lookHere">
+                <div class="col col-33 ">
+                   <div><img src="images/meishi_big_1.jpg" ui-sref="tabs.video"/></div>
+                    <p>珍珠丸子</p>
+                </div>
+                <div class="col col-33 ">
+                    <div><img src="images/meishi_big_2.jpg" ui-sref="tabs.video"/></div>
+                    <p>四喜丸子</p>
+                </div>
+                <div class="col col-33">
+                    <div><img src="images/meishi_big_3.jpg" ui-sref="tabs.video"/></div>
+                    <p>炸牛丸</p>
+                </div>
+            </div>
+            <!--周围都在看end-->
+            <!--精选-->
+            <div id="selected">
+                <p class="p1">精 　　　选</p>
+                <div class="showMeHomePage"><img src="images/jingxuan.jpg"/></div>
+                <!--精选card列表-->
+
+                <div class="list-card" id="listCard" ng-repeat="x in home">
+                    <div class="item image" >
+                        <div class="mydiv"><img ng-src="{{x.image_url}}"/></div>
+                        <p>{{x.comment}}</p>
+                        <p>{{count+x.sum1}}喜欢 　　{{x.sum2}}评论 　　{{x.sum3}}做过</p>
+                        <div class="item" id="share">
+                            <div class="row">
+                                <div class="col" ng-click="myVar='my-class'"><i class="icon ion-heart" ng-class="myVar"  ng-click="count=count+1"></i>　喜欢</div>
+                                <div class="col"><i class="icon ion-chatbubble" ng-class="myVar2" ng-click="myVar2='my-class2'"></i>　评论</div>
+                                <div class="col"><i class="icon ion-share" ng-class="myVar3" ng-click="myVar3='my-class3'"></i>　分享</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--向下无限刷新-->
+                <ion-infinite-scroll on-infinite="loadmore()" immediate-check="false" ></ion-infinite-scroll>
+            </div>
+        </ion-content>
+    </ion-side-menu-content>
+
+    <!--左侧边栏-->
+    <ion-side-menu side="left" id="onside">
+        <!--header-->
+        <ion-header-bar class="bar-energized">
+            <h1 class="title">全部分类</h1>
+        </ion-header-bar>
+        <!--content-->
+        <ion-content>
+            <div class="list" id="sidebar">
+                <a class="item item-icon-left" ui-sref="tabs.home" menu-close>
+                    <i class="icon ion-ios-home-outline"></i> 返回首页
+                </a>
+                <a class="item item-icon-left" ui-sref="tabs.tantan" menu-close>
+                    <i class="icon ion-ios-gear-outline"></i> 探探
+                </a>
+                <a class="item item-icon-left" ui-sref="tabs.near"  menu-close>
+                    <i class="icon ion-social-instagram-outline"></i> 附近餐厅
+                </a>
+                <a class="item item-icon-left" ui-sref="tabs.buy"  menu-close>
+                    <i class="icon ion-ios-cart-outline"></i> 美食商城
+                </a>
+            </div>
+        </ion-content>
+
+    </ion-side-menu>
+
+</ion-side-menus>

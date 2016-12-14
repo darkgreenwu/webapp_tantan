@@ -1,0 +1,85 @@
+/*home页*/
+div,p,ul,li{margin:0;padding:0}
+#slideBox{margin-top:-44px}
+#slideBox .box img{width:100%;height:300px}
+#homeRow{border-top:10px solid #dddddd;margin-top:-5px;border-bottom:5px solid #dddddd;height:164px}
+#homeRow div{text-align:center;padding-top:10px}
+#homeRow .col{text-align: center}
+#homeRow div p{font-size:16px;padding-top:10px}
+#homeRow div img{width:80px;height:80px;overflow:hidden;border-radius: 50%;}
+#focus{margin-left:38px;padding-top:15px;font-size:16px}
+#focus i{color:forestgreen;font-size:30px;margin-left:15px}
+#lookHere{padding-top:5px}
+#lookHere .col{text-align:center}
+#lookHere .col img{width:100%;height:100%}
+#lookHere .col p{font-size:16px;}
+#selected{background: #eeeeee;}
+#selected img{width:100%;height:150px}
+#selected .p1{font-size:25px;color:#e6b500;
+    line-height:50px;text-align:center;}
+#listCard {width:90%;margin:7px auto}
+#listCard img{width:95%;height:250px}
+#listCard #share{border-bottom:none;border-right:none;border-left:none;color:#e6b500}
+#listCard #share i{font-size:20px;}
+#listCard .mydiv{text-align:center}
+#listCard p{padding-left:30px;padding-top:20px}
+/*探探*/
+#shoppingcart #header{text-align:center;font-size:20px;color:#e6b500;height:88px;}
+#shoppingcart #slideBox div img{height:110px}
+#tantan_lookHere{padding-top:5px;border-bottom: 2px solid #dddddd;border-top:5px solid #ddd;margin-top:-5px}
+#tantan_lookHere .col{text-align:center;position:relative;}
+#tantan_lookHere .col div{height:80px;width:90px;overflow:hidden;border-radius: 8px;text-align:center}
+#tantan_lookHere .col img{width:100%;height:100%}
+#tantan_lookHere .col p{font-size:16px;position:absolute;bottom:6px;left:6px;background:rgba(0,0,0,0.5);color:#fff;width:90px;
+border-radius: 0 0 8px 8px}
+/*侧边栏*/
+#sidebar{color:#e6b500}
+/*附近*/
+#mynear{text-align:center;font-size:20px;color:#e6b500;height:41px;line-height:25px}
+#nearMyContent{background:#ddd}
+#content p{font-size:12px}
+/*购好货*/
+#mybuy{text-align:center;font-size:20px;color:#e6b500;height:42px;line-height:17px;border-bottom:3px solid #ddd}
+#buy .tabs_list{text-align:center;border-top:5px solid #d1d3d6;border-bottom:5px solid #d1d3d6;height:60px;line-height:60px}
+#buy .tabs_list a{text-decoration:none;color:#8f8f8f;font-size:14px;margin:0 10px}
+#hotnews .col img{width:100%}
+#hotnews span{color:#9e9e9e}
+#hotnews .shop{width:100px;height:35px;line-height:35px;border-radius: 4px;background:#e6b500;color:#fff;display:block;text-decoration:none;
+text-align:center}
+#hotnews .row{border-bottom:1px solid #dddddd;padding-top:10px}
+/*视频页面*/
+#video .list{padding-top:10px}
+#video .title{text-align:center;font-size:20px;height:25px;line-height:25px}
+/*幻灯片进入时播放*/
+#tour-view .slide-icon{
+    font-size: 20em;
+}
+#tour-view i{font-size:20em}
+/*整个幻灯*/
+#tour-view .slider{
+    height:100%;
+}
+/*每个幻灯页*/
+#tour-view .slider-slide{}
+#tour-view .slider-slide{
+    text-align: center;
+    padding-top: 100px;
+
+}
+#tour-view img{width:100%;height:300px}
+#tour-view p{font-size:20px;padding-top:40px;color:#e6b500}
+
+
+.my-class {
+    color: red;
+    font-size:3em;
+}
+
+.my-class2 {
+    color: red;
+    font-size:3em;
+}
+.my-class3 {
+    color: red;
+    font-size:3em;
+}

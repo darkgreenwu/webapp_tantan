@@ -1,0 +1,19 @@
+<ion-tabs  class="tabs-energized tabs-icon-top">
+    <ion-tab title="主页"  ui-sref="tabs.home"
+              icon-on="ion-ios-home" icon-off="ion-ios-home-outline">
+        <!--改为命名的navView-->
+        <ion-nav-view name="tab-home"></ion-nav-view>
+    </ion-tab>
+    <ion-tab title="探探" ui-sref="tabs.tantan"
+             icon-on="ion-ios-gear" icon-off="ion-ios-gear-outline">
+        <ion-nav-view name="tab-tantan"></ion-nav-view>
+    </ion-tab>
+    <ion-tab title="附近"
+             ui-sref="tabs.near" icon="icon ion-social-instagram">
+        <ion-nav-view name="tab-near"></ion-nav-view>
+    </ion-tab>
+    <ion-tab title="购翻天" badge="5" badge-style="badge-positive"
+             ui-sref="tabs.buy" icon="icon ion-ios-cart">
+        <ion-nav-view name="tab-buy"></ion-nav-view>
+    </ion-tab>
+</ion-tabs>
